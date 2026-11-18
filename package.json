@@ -1,0 +1,46 @@
+{
+  "name": "@cloudflare/oxlint-config",
+  "version": "0.1.0",
+  "description": "Shared Oxlint rules for Cloudflare JavaScript and TypeScript projects.",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cloudflare/oxlint-config.git"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "skills/migrate-oxlint-config/SKILL.md"
+  ],
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./index.js"
+    }
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "prepare": "vp config --no-agent",
+    "test": "vp test"
+  },
+  "dependencies": {
+    "@nkzw/oxlint-config": "3.0.0"
+  },
+  "devDependencies": {
+    "oxlint": "^1.94.0",
+    "tsrs": "^0.25.0-ts7.1.0-beta",
+    "vite-plus": "^1.7.0"
+  },
+  "peerDependencies": {
+    "oxlint": "^1.94.0",
+    "tsrs": ">=0.25.0-ts7.1.0-beta"
+  },
+  "engines": {
+    "node": "^22.18.0 || >=24.0.0"
+  },
+  "packageManager": "pnpm@12.21.0"
+}
