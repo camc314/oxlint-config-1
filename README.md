@@ -12,7 +12,7 @@ Use Node.js 22.18 or later. It is the first 22.x release that can load
 Install the preset with Oxlint and `tsrs`, its type-aware backend:
 
 ```sh
-npm install -D @cloudflare/oxlint-config oxlint@^1.94.0 tsrs@0.25.0-ts7.1.0-beta
+npm install -D @cloudflare/oxlint-config oxlint@^1.94.0 tsrs@^7.1.0-beta.tsrs2
 ```
 
 Create `oxlint.config.ts` in the project root:
